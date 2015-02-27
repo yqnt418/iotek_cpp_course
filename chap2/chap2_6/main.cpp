@@ -10,7 +10,10 @@ inline bool isnumber(char ch)
 
 int main(int argc, char *argv[])
 {
-	char c;
+	bool status = true;
+	status = false;
+
+	char c = 0;
 	while((c = cin.get()) != 'q'){
 		if(isnumber(c)){
 			cout << "You enter a digit" << endl;
